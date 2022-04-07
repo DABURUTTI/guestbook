@@ -44,3 +44,6 @@ services:
           entity: 'App\Entity\Conference',
         }
   Symfony\Component\HttpKernel\HttpCache\StoreInterface: "@http_cache.store"
+files:
+  type: network-storage:1.0
+  disk: 256
