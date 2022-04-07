@@ -43,3 +43,4 @@ services:
           event: "preUpdate",
           entity: 'App\Entity\Conference',
         }
+  Symfony\Component\HttpKernel\HttpCache\StoreInterface: "@http_cache.store"
