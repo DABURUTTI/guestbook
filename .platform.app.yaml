@@ -12,6 +12,7 @@ runtime:
     - blackfire
     - ctype
     - iconv
+    - redis
     - mbstring
     - pdo_pgsql
     - sodium
@@ -38,6 +39,7 @@ mounts:
   "/public/uploads": { source: service, service: files, source_path: uploads }
 relationships:
   database: "database:postgresql"
+  redis: "rediscache:redis"
 
 hooks:
   build: |
